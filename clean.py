@@ -21,6 +21,9 @@ def clean_data(input1, input2, output):
     merged_df.to_csv(output, index=False)
 
     print("Data cleaning completed. Cleaned data saved to", output)
+    # Get the shape of the output file
+    output_shape = merged_df.shape
+    print("Output file shape:", output_shape)
 
 if __name__ == "__main__":
     input1 = 'respondent_contact.csv'
